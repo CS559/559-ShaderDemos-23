@@ -97,17 +97,17 @@ function stripeExperiment(title,fsfilebase) {
         shaderMat.uniformsNeedUpdate = true;
     }
     
-    new InputHelpers.LabelSlider("tranf rotX", {min:-1, max:1, initial:trotx, step:.1, where:box}).oninput = function(s) {
+    new InputHelpers.LabelSlider("tranf rotX", {min:-2, max:2, initial:trotx, step:.1, where:box}).oninput = function(s) {
         trotx = Number(s.value());
         updateMatrix(shaderMat.uniforms.woodTrans.value);
         shaderMat.uniformsNeedUpdate = true;
     }
-    new InputHelpers.LabelSlider("tranf rotY", {min:-1, max:1, initial:troty, step:.1, where:box}).oninput = function(s) {
+    new InputHelpers.LabelSlider("tranf rotY", {min:-2, max:2, initial:troty, step:.1, where:box}).oninput = function(s) {
         troty = Number(s.value());
         updateMatrix(shaderMat.uniforms.woodTrans.value);
         shaderMat.uniformsNeedUpdate = true;
     }
-    new InputHelpers.LabelSlider("tranf rotZ", {min:-1, max:1, initial:trotz, step:.1, where:box}).oninput = function(s) {
+    new InputHelpers.LabelSlider("tranf rotZ", {min:-2, max:2, initial:trotz, step:.1, where:box}).oninput = function(s) {
         trotz = Number(s.value());
         updateMatrix(shaderMat.uniforms.woodTrans.value);
         shaderMat.uniformsNeedUpdate = true;
